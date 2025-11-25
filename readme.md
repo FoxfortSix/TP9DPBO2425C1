@@ -122,7 +122,7 @@ MVP/
 
 Berikut adalah dokumentasi tampilan antarmuka program.
 
-### Tampilan Daftar Pembalap
+### Dokumentasi keseluruhan menggunakan video recording
 
 \*jika tidak muncul didalam readme, silahkan cek di folder dokumentasi
 ![Daftar Pembalap](Dokumentasi/dokumentasi.mp4)
