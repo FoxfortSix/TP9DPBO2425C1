@@ -55,8 +55,6 @@ MVP/
 ├── project/
 │   ├── index.php
 │   ├── sirkuit.php
-│   ├── dokumentasi/
-│   │   ├── dokmentasi.mp4
 │   ├── models/
 │   │   ├── DB.php
 │   │   ├── Pembalap.php
@@ -80,6 +78,8 @@ MVP/
 │       ├── skin\_sirkuit.html
 │       ├── form.html
 │       └── form\_sirkuit.html
+├── dokumentasi/
+│   └── dokmentasi.mp4
 └── README.md
 
 ```
