@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Form Sirkuit</title>
+  <style>
+    /* Style sederhana disamakan dengan form.html */
+    :root{ --bg: #f7f8fb; --card: #ffffff; --muted: #6b7280; --accent: #2563eb; --border: #e6e9ef; --radius: 8px; font-family: system-ui, sans-serif; }
+    body{background:var(--bg);margin:0;padding:36px}
+    .container{max-width:600px;margin:0 auto}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+    form{display:grid;gap:12px}
+    input{width:100%;padding:10px;border:1px solid var(--border);border-radius:6px;box-sizing:border-box}
+    .btn{padding:10px 14px;border-radius:6px;cursor:pointer;border:none;font-size:14px}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-muted{background:transparent;border:1px solid var(--border);color:var(--muted);text-decoration:none;display:inline-block;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Form Sirkuit</h1>
+      <form method="post" action="sirkuit.php">
+        <input type="hidden" name="action" value="add" id="sirkuit-action">
+        <input type="hidden" name="id" value="" id="sirkuit-id">
+
+        <label>Nama Sirkuit</label>
+        <input name="nama" id="nama" type="text" required>
+
+        <label>Negara</label>
+        <input name="negara" id="negara" type="text" required>
+
+        <label>Panjang (KM)</label>
+        <input name="panjang" id="panjang" type="number" step="0.001" required>
+
+        <label>Jumlah Tikungan</label>
+        <input name="tikungan" id="tikungan" type="number" required>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px">
+          <a href="sirkuit.php" class="btn btn-muted">Batal</a>
+          <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html> 

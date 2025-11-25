@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daftar Sirkuit</title>
+  <style>
+    :root{ --bg: #f7f8fb; --card: #ffffff; --muted: #6b7280; --accent: #2563eb; --danger: #ef4444; --border: #e6e9ef; --radius: 8px; font-family: system-ui, sans-serif; }
+    html,body{height:100%;margin:0;background:var(--bg);}
+    .container{max-width:980px;margin:36px auto;padding:18px;}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px;}
+    
+    /* Style Navbar */
+    .navbar { display: flex; gap: 10px; margin-bottom: 20px; }
+    .nav-link { 
+        text-decoration: none; 
+        padding: 10px 20px; 
+        border-radius: var(--radius); 
+        font-weight: 600; 
+        font-size: 14px;
+        transition: all 0.2s;
+    }
+    .nav-active { 
+        background-color: var(--accent); 
+        color: white; 
+        box-shadow: 0 2px 4px rgba(37,99,235,0.3);
+    }
+    .nav-inactive { 
+        background-color: var(--card); 
+        color: var(--muted); 
+        border: 1px solid var(--border); 
+    }
+    .nav-inactive:hover { border-color: var(--accent); color: var(--accent); }
+
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    thead th{text-align:left;padding:12px 10px;color:var(--muted);border-bottom:1px solid var(--border)}
+    tbody td{padding:12px 10px;border-bottom:1px solid var(--bg);}
+    .btn{padding:8px 10px;border-radius:6px;text-decoration:none;font-size:13px;cursor:pointer;border:none}
+    .btn-add{background:var(--accent);color:#fff;padding:10px 14px;display:inline-block}
+    .btn-edit{color:var(--accent);background:transparent}
+    .btn-delete{color:var(--danger);background:transparent}
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <nav class="navbar">
+        <a href="index.php" class="nav-link nav-inactive">Data Pembalap</a>
+        <a href="sirkuit.php" class="nav-link nav-active">Data Sirkuit</a>
+    </nav>
+
+    <div class="card">
+      <h1>Daftar Sirkuit</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama Sirkuit</th>
+            <th>Negara</th>
+            <th>Panjang (KM)</th>
+            <th>Jumlah Tikungan</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- PHP WILL INJECT ROWS HERE -->
+        </tbody>
+      </table>
+      <div style="margin-top:14px">
+        <a href="sirkuit.php?screen=add" class="btn btn-add">+ Tambah Sirkuit</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
