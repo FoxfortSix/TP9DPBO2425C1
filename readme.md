@@ -124,18 +124,5 @@ Berikut adalah dokumentasi tampilan antarmuka program.
 
 ### Tampilan Daftar Pembalap
 
-_(Halaman Utama yang menampilkan tabel data pembalap)_
-
-![Daftar Pembalap](screenshots/list_pembalap.png)
-
-### Tampilan Form Tambah/Edit Pembalap
-
-_(Form input untuk memanipulasi data pembalap)_
-
-![Form Pembalap](screenshots/form_pembalap.png)
-
-### Tampilan Daftar Sirkuit
-
-_(Halaman pengelolaan data sirkuit)_
-
-![Daftar Sirkuit](screenshots/list_sirkuit.png)
+\*jika tidak muncul didalam readme, silahkan cek di folder dokumentasi
+![Daftar Pembalap](Dokumentasi/dokumentasi.mp4)
